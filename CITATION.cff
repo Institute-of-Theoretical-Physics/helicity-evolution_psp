@@ -2,8 +2,9 @@ cff-version: 1.2.0
 message: "If you use this software or dataset, please cite it as below."
 title: "Code and Data for \"Non-local Evolution of Magnetic Helicity across the MHD-Kinetic Interface\""
 type: software
-version: "0.1.4"
-date-released: "2026-08-16"
+version: "0.1.5"
+date-released: "2026-09-15"
+license: MIT
 
 authors:
   - family-names: "Iizawa"
@@ -48,3 +49,19 @@ grants:
     funder:
       name: "Japan Society for the Promotion of Science"
     number: "JP23K25895"
+  - name: "JSPS Grants-in-Aid for Scientific Research"
+    funder:
+      name: "Japan Society for the Promotion of Science"
+    number: "JP26K00767"
+
+abstract: >-
+  This repository contains the Python scripts and processed datasets required to reproduce Figures 1 through 4 presented in the paper "Non-local Evolution of Magnetic Helicity across the MHD-Kinetic Interface".
+
+  To accommodate different user needs, the codebase is structured into three levels of reproducibility:
+  - Level 3 (Quick Figure Reproduction, Recommended): Uses pre-extracted lightweight datasets (.csv and .h5) in plot_data/ to instantly generate Figures 1-4 via plot_figureX.py without downloading raw satellite data.
+  - Level 2 (Plot Data Extraction & Calculation): Runs calculate_plot_data.py to recalculate physical quantities from intermediate .parquet/.ipc files.
+  - Level 1 (Raw Data Preprocessing): Provides reference prep_stepX scripts demonstrating how raw Parker Solar Probe (PSP) L2/L3 CDF files were processed.
+
+  Changes in this version:
+  - Added the LICENSE file.
+  - Added repository metadata and abstract in CITATION.cff.
