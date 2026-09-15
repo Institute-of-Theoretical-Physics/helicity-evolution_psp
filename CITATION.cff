@@ -5,6 +5,7 @@ type: software
 version: "0.1.5"
 date-released: "2026-09-15"
 license: MIT
+doi: 10.5281/zenodo.21960159
 
 authors:
   - family-names: "Iizawa"
