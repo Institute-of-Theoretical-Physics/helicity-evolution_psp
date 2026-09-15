@@ -55,7 +55,7 @@ grants:
       name: "Japan Society for the Promotion of Science"
     number: "JP26K00767"
 
-abstract: >-
+abstract: |-
   This repository contains the Python scripts and processed datasets required to reproduce Figures 1 through 4 presented in the paper "Non-local Evolution of Magnetic Helicity across the MHD-Kinetic Interface".
 
   To accommodate different user needs, the codebase is structured into three levels of reproducibility:
