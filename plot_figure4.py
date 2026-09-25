@@ -63,8 +63,8 @@ def plot_top(f, cmap, norm):
     secax.tick_params(axis='x', which='minor', bottom=False)
 
     # Colorbar
-    pp = fig.colorbar(mesh, orientation="horizontal", location="top", shrink=0.8, aspect=30, pad=0.02)
-    pp.set_label(r"Normalized magnietic helicity $\boldsymbol{\sigma}_{\mathbf{m}}$", fontproperties=condensed_font, fontsize=8)
+    pp = fig.colorbar(mesh, orientation="horizontal", location="top", shrink=0.8, aspect=30, pad=-0.03)
+    pp.set_label(r"Normalized magnetic helicity $\boldsymbol{\sigma}_{\mathbf{m}}$", fontproperties=condensed_font, fontsize=8)
     pp.outline.set_linewidth(1.5)
     pp.ax.xaxis.set_ticks_position('bottom')
     pp.ax.xaxis.set_tick_params(width=1.5, length=1.5)
